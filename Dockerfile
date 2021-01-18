@@ -3,6 +3,8 @@ FROM node:alpine
 VOLUME /data
 WORKDIR /app
 
+RUN apk update && \
+    apk add --no-cache tzdata
 RUN npm install tiddlyserver
 
 ENV TWS_PORT 8080
