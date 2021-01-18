@@ -5,7 +5,7 @@ WORKDIR /app
 
 RUN npm install tiddlyserver
 
-ENV TWS_PORT 8088
+ENV TWS_PORT 8080
 ENV TWS_SETTINGS_FILE /data/.config/tiddlyserver.json
 
 EXPOSE ${TWS_PORT}
